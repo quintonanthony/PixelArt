@@ -10,7 +10,7 @@ public class DesktopLauncher {
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 		config.setWindowedMode(1280, 768);
 		config.setForegroundFPS(60);
-		config.setTitle("lib GDX Intro -- YOU CAN CHANGE THIS");
+		config.setTitle("Steve Pixel Art");
 		new Lwjgl3Application(new AppHandler(), config);
 	}
 }
