@@ -25,11 +25,11 @@ public class TileHandler {
         Texture tempTexture = new Texture(primaryColorSheetPath);
 
         TextureRegion tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth*2, spriteOnSheetHeight*2, spriteOnSheetWidth, spriteOnSheetHeight);
-        WorldTile brownWorldTile = new WorldTile(tempRegion, 0, "brown");
+        WorldTile brownWorldTile = new WorldTile(tempRegion, 1, "brown");
         worldTileArray.add(brownWorldTile);
 
         tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth*4, spriteOnSheetHeight*2, spriteOnSheetWidth, spriteOnSheetHeight);
-        WorldTile tealWorldTile = new WorldTile(tempRegion, 1, "teal");
+        WorldTile tealWorldTile = new WorldTile(tempRegion, 6, "teal");
         worldTileArray.add(tealWorldTile);
 
         tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth*6, spriteOnSheetHeight*2, spriteOnSheetWidth, spriteOnSheetHeight);
@@ -47,6 +47,10 @@ public class TileHandler {
         tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth*12, spriteOnSheetHeight*2, spriteOnSheetWidth, spriteOnSheetHeight);
         WorldTile blackWorldTile = new WorldTile(tempRegion, 5, "black");
         worldTileArray.add(blackWorldTile);
+
+        tempRegion = new TextureRegion(tempTexture, spriteOnSheetWidth*2, spriteOnSheetHeight*1, spriteOnSheetWidth, spriteOnSheetHeight);
+        WorldTile whiteWorldTile = new WorldTile(tempRegion, 0, "white");
+        worldTileArray.add(whiteWorldTile);
     }
 
     public Array<WorldTile> getWorldTileArray() {
